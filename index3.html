@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two Column Layout</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
 
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #0d6ad4;
+      color: black;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .first-column {
+      flex: 1;
+      background-color: lightblue;
+      padding: 20px;
+    }
+
+    .second-column {
+      flex: 2;
+      background-color: lightgreen;
+      padding: 20px;
+      display: flex;
+      flex-direction: row; /* Change to row */
+    }
+
+    .inner-column {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .div1,
+    .div2 {
+      margin-bottom: 10px;
+      background-color: #f0f0f0;
+      padding: 50px;
+      height: 800px;
+      width: 300px;
+    }
+
+    .div1 {
+      margin-right: 10px; /* Added */
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index1.html">HTML1</a>
+  <a href="index2.html">HTML2</a>
+  <a href="#index3.html">HTML3</a>
+  <a href="#index4.html">HTML4</a>
+</nav>
+<div class="container">
+  <div class="first-column">
+    <p>First column.</p>
+  </div>
+  <div class="second-column">
+    <div class="div1">
+      <p>Division 1</p>
+    </div>
+    <div class="div2">
+      <p>Division 2</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
