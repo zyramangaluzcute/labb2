@@ -40,7 +40,11 @@
             flex: 1;
             padding: 10px;
             border: 1px solid white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
+
         #middle-column {
             flex: 1;
             display: flex;
@@ -57,6 +61,20 @@
             width: 600px;
             height: 90%;
         }
+
+        .column-button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .column-button:hover {
+            background-color: #0d6ad4;
+        }
     </style>
 </head>
 <body>
@@ -71,6 +89,7 @@
     <div id="content">
         <div id="left-column">
             Left Column Content
+            <a class="column-button" href="#">Click me</a>
         </div>
         <div id="middle-column">
             <div id="inner-division">
@@ -79,6 +98,7 @@
         </div>
         <div id="right-column">
             Right Column Content
+            <a class="column-button" href="#">Click me</a>
         </div>
     </div>
 
