@@ -25,36 +25,47 @@
         }
 
         nav a:hover {
-            background-color: #ddd;
+            background-color: #0d6ad4;
             color: black;
         }
 
         #content {
-            background-color: purple;
+            background-color: rgb(113, 205, 233);
             display: flex;
             justify-content: space-between;
             height: 100%;
         }
 
-        #left-column, #middle-column, #right-column {
+        #left-column, #right-column {
             flex: 1;
             padding: 10px;
+            border: 1px solid white;
+        }
+        #middle-column {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(113, 205, 233);
+            width: 800px;
         }
 
         #inner-division {
             background-color: white;
-            padding: 15px;
+            padding: 20px;
             text-align: center;
+            width: 600px;
+            height: 90%;
         }
     </style>
 </head>
 <body>
 
     <nav>
-        <a href="#home">Button 1</a>
-        <a href="#about">Button 2</a>
-        <a href="#services">Button 3</a>
-        <a href="#contact">Button 4</a>
+        <a href="index1.html">HTML1</a>
+        <a href="index2.html">HTML2</a>
+        <a href="#services">HTML3</a>
+        <a href="#contact">HTML4</a>
     </nav>
 
     <div id="content">
